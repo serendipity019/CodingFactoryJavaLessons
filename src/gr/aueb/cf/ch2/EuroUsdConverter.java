@@ -17,7 +17,6 @@ public class EuroUsdConverter {
         dol = totalUsaCents / 100;
         cent = totalUsaCents % 100;
 
-        // \u είναι για να εισάγουμε utf-8 χαρακτήρες.
         System.out.printf("%d\u20AC euros = \u0024%d usa dollars and %d usa cents", euro, dol, cent);
     }
 }
