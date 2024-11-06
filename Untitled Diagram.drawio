@@ -86,13 +86,13 @@
         <mxCell id="cb593BEcCMVVSMPNYewj-21" value="categories" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="390" y="300" width="150" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="cb593BEcCMVVSMPNYewj-22" value="&lt;u&gt;id&lt;br&gt;name&lt;/u&gt;&lt;div&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="cb593BEcCMVVSMPNYewj-21">
+        <mxCell id="cb593BEcCMVVSMPNYewj-22" value="&lt;u&gt;id&lt;br&gt;&lt;/u&gt;name&lt;div&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="cb593BEcCMVVSMPNYewj-21">
           <mxGeometry y="30" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="cb593BEcCMVVSMPNYewj-24" value="copies" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="180" y="340" width="150" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="cb593BEcCMVVSMPNYewj-25" value="barcode(PK)&lt;br&gt;&lt;div&gt;distribution_id&lt;/div&gt;&lt;div&gt;price&lt;/div&gt;&lt;div&gt;movie_id(FK)&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="cb593BEcCMVVSMPNYewj-24">
+        <mxCell id="cb593BEcCMVVSMPNYewj-25" value="barcode(PK)&lt;br&gt;&lt;div&gt;distribution_id(FK)&lt;/div&gt;&lt;div&gt;price&lt;/div&gt;&lt;div&gt;movie_id(FK)&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="cb593BEcCMVVSMPNYewj-24">
           <mxGeometry y="30" width="150" height="100" as="geometry" />
         </mxCell>
         <mxCell id="cb593BEcCMVVSMPNYewj-28" value="distribution_species" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
