@@ -27,3 +27,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Tryfile ###
+src/gr/aueb/cf/exercises/week3/TryFile.java
