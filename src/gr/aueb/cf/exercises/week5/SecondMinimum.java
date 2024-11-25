@@ -22,15 +22,12 @@ public class SecondMinimum {
     public static int getMinPosition(int[] arr){
         if (arr == null) return -1;
 
-        int point1 = -1;
-        int point2 = -1;
+        int point1 = 0;
+        int point2 = 1;
         int min1 = arr[0];
         int min2 = arr[1];
 
-        if (min1 < min2 ){
-            point1 = 0;
-            point2 = 1;
-        }else{
+        if (min1 > min2 ){
             point1 = 1;
             point2 = 0;
         }
