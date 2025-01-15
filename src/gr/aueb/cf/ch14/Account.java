@@ -1,5 +1,7 @@
 package gr.aueb.cf.ch14;
 
+import gr.aueb.cf.ch14.exceptions.NegativeAmountException;
+
 /**
  * defines a {@link Account} class.
  */
@@ -79,16 +81,17 @@ public class Account {
     /**
      * Deposits a certain amount of money.
      * @param amount the amount of money to be deposited.
-     * @throws Exception if the amount is negative.
+     * @throws NegativeAmountException if the amount is negative.
      */
-    public void deposit(double amount) throws Exception {
+    public void deposit(double amount) throws NegativeAmountException {
         try {
             if (amount < 0){
-                throw new Exception("The amount must not be negative.");
+                //throw new Exception("The amount must not be negative.")
+                throw new NegativeAmountException(amount);
             }
             balance += amount;
             System.out.println("Amount " + amount + " successfully deposited.");
-        } catch (Exception e){
+        } catch (NegativeAmountException e){
             System.err.println("Error. Amount " + amount + " can not be negative.");
              //e.printStackTrace(); // auto einai stin fasi tou development
             throw e;
