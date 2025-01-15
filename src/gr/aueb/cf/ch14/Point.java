@@ -29,7 +29,7 @@ public class Point {
         this.y = y;
     }
 
-    public pointToString() {
+    public Object pointToString() {
         return "(" + x + ", " + y + ")";
     }
 }
