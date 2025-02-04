@@ -43,7 +43,7 @@ public class SingleList<T> {
      * @return the removed node.
      */
     public Node<T> removeFirst() {
-        if (head == null) return null;
+        if (isEmpty()) return null;
 
         Node<T> node = head;
         head = head.getNext();
@@ -55,7 +55,7 @@ public class SingleList<T> {
      * @return the removed node.
      */
     public Node<T> removeLast() {
-        if (head == null || head.getNext() == null) {
+        if (isEmpty()|| head.getNext() == null) {
             return removeFirst();
         }
 
@@ -66,5 +66,42 @@ public class SingleList<T> {
         Node<T> nodeToReturn = n.getNext();
         n.setNext(null);
         return nodeToReturn;
+    }
+
+    /**
+     * Search method. Time complexity O(n)
+     * @param t the value that search for.
+     * @return the node that contains the value, null otherwise.
+     */
+    public Node<T> get(T t) {
+        Node<T> nodeToReturn = null;
+
+        for(Node<T> n = head; n != null; n = n.getNext()) {
+            if (n.getItem().equals(t)) {
+                nodeToReturn = n;
+                break;
+            }
+        }
+        return nodeToReturn;
+    }
+
+    //This method merely print the list
+    public void traverse() {
+        for (Node<T> n =head; n != null; n = n.getNext()) {
+            System.out.println(n.getItem());
+        }
+    }
+
+    public boolean isEmpty() {
+        return head == null;
+    }
+
+    public int size() {
+        int counter = 0;
+
+        for (Node<T> n =head; n != null; n = n.getNext()) {
+            counter++;
+        }
+        return counter;
     }
 }
