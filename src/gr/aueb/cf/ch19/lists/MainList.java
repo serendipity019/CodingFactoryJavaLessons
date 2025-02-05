@@ -44,5 +44,15 @@ public class MainList {
         }
         //fourth way
         cities.forEach(System.out::println); // cities.forEach(city -> System.out.println(city));
+
+        //Let we want to delete the NY. 2 ways
+        Iterator<String> iter = cities.iterator();
+        while (iter.hasNext()) {
+            String city = iter.next();
+            if (city.equals("New York")) {
+                iter.remove();
+                //cities.remove(city); // Exception Error : Concarent modification
+            }
+        }
     }
 }
