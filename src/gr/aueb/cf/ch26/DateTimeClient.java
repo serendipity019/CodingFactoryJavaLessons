@@ -1,6 +1,5 @@
 package gr.aueb.cf.ch26;
 
-import javax.security.sasl.SaslClient;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

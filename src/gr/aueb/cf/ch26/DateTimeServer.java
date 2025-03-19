@@ -1,6 +1,5 @@
 package gr.aueb.cf.ch26;
 
-import gr.aueb.cf.ch2.Date;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -9,6 +8,7 @@ import java.io.OutputStreamWriter;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Date;
 
 public class DateTimeServer extends Thread {
 
